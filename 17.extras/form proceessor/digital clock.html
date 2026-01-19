@@ -1,0 +1,27 @@
+<html>
+<head>
+ <title>Digital Clock</title>
+ <script language="javascript">
+ function Digital()
+ {
+ mydate=new Date()
+ var a,b,c;
+ a=mydate.getHours()
+ b=mydate.getMinutes()
+ c=mydate.getSeconds()
+ d.h.value=a
+ d.m.value=b
+ d.s.value=c
+ }
+ setInterval("Digital()",1000)
+ </script>
+</head>
+  <body>
+   <h1>Digital Clock</h1>
+    <form name="d">
+<input type="text" name="h"  size="2" readonly>
+<input type="text" name="m" size="2" readonly>
+<input type="text" name="s"  size="2" readonly>
+  </form>
+  </body>
+</html>

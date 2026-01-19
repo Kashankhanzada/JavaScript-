@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, accusantium quas! Sapiente
+            consequatur velit, omnis animi ea amet nihil culpa quasi aperiam aut eaque incidunt at nulla modi impedit.
+            Illum, eveniet animi. Commodi amet, fugiat odit excepturi id ratione animi. Modi, ullam iste. Perspiciatis
+            eos explicabo sint eligendi unde! Fugit voluptatum dolorem expedita minus quod.</p>
+        <button id="btn" onclick="toggle()">hide/show</button>
+    </div>
+    <script>
+        function toggle() {
+            var btn = document.getElementById("btn");
+            var para = document.getElementById("para");
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+<script type="text/javascript">
+function addEventHandler(oNode, evt, oFunc, bCaptures)
+{
+	if (typeof(window.event) != "undefined")
+		oNode.attachEvent("on"+evt, oFunc);
+	else
+		oNode.addEventListener(evt, oFunc, bCaptures);
+}
+function getEventTarget(e) {
+	if (window.event) return window.event.srcElement;
+	else return e.target;
+}
+</script>
+</head>
+
+<body>
+
+<h1>Using the Modern Event Model</h1>
+<div id="div1" style="border:1px solid #000000;padding:10pt;background:cornsilk">
+	<p>This is div 1</p>
+	<div id="div2" style="border:1px solid #000000;padding:10pt;background:gray">
+		<p>This is div 2</p>	
+		<div id="div3" style="border:1px solid #000000;padding:10pt; background:lightBlue">
+			<p>This is div 3</p>
+		</div>
+	</div>
+</div>
+
+
+</body>
+
+</html>

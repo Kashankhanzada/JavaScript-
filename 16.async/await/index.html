@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //******************************************************************************
+
+        //**************************** only promise ***********************************
+
+
+        //******************************************************************************
+
+        // function getdata(){
+        //     return new Promise((resolve,reject)=>{
+        //         setTimeout(() => {
+        //             resolve(455)
+        //         }, 3500);
+        //     })
+        // };
+        // console.log("loading modules");
+
+        // console.log("loading somthing else");
+        // console.log("loading data");
+
+        // let data = getdata()
+
+        // // data.then((v)=>{
+        // //     console.log(data);
+        // //     console.log("process data");
+        // //     console.log("task 2");
+        // // });
+
+        // console.log(data);
+        // console.log("process data");
+        // console.log("task 2");
+
+        //******************************************************************************
+
+
+        // **************************asyns await*****************************
+
+
+        //******************************************************************************
+
+        // async function getdata(){
+        //     return new Promise((resolve,reject)=>{
+        //         setTimeout(() => {
+        //             resolve(455)
+        //         }, 3500);
+        //     })
+        // };
+        // async function main(){
+
+        //     console.log("loading modules");
+
+        //     console.log("loading somthing else");
+        //     console.log("loading data");
+
+        //     let data = await getdata()
+
+        //     console.log(data);
+        //     console.log("process data");
+        //     console.log("task 2");
+        // };
+        // main();
+        //******************************************************************************
+
+
+        // **************************    fetch   *****************************
+
+
+        //******************************************************************************
+
+        // async function getdata(){
+        //  // get data from server 
+        //  let x = await fetch ('https://jsonplaceholder.typicode.com/todos/1')
+        //  let data = x.json()
+        //  console.log(data);
+        // };
+        // async function main(){
+
+        //     console.log("loading modules");
+
+        //     console.log("loading somthing else");
+        //     console.log("loading data");
+
+        //     let data = await getdata()
+
+        //     console.log(data);
+        //     console.log("process data");
+        //     console.log("task 2");
+        // };
+        // main();
+
+        //******************************************************************************
+
+
+        // ************************** post request  *****************************
+
+
+        //*****************************************************************************
+
+        async function getdata() {
+            // get data from server 
+            
+            let x =  await fetch('https://jsonplaceholder.typicode.com/todos/1',{
+                method:'POST',
+                body:JSON.stringify({
+                    title:'foo',
+                    body:'bar',
+                    userId:I,
+                 }),
+                 headers:{
+                     'Content-type':'applicatioon /json; charset-UTF-8',
+                 },
+                })
+
+                let data = await x.json()
+                return data
+            
+        };
+        async function main() {
+
+            console.log("loading modules");
+
+            console.log("loading somthing else");
+            console.log("loading data");
+
+            let data = await getdata()
+
+            console.log(data);
+            console.log("process data");
+            console.log("task 2");
+        };
+        main();
+    </script>
+</body>
+
+</html>

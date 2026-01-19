@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        img{
+            width: 300px;
+            height: 250px;
+            border: 6px solid purple;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <img src="png.1.jpg" alt="" name="myframe" width="50%" height="50%">
+    </center>
+
+    <script>
+        var a= 0;
+        function img(){
+            photo =new Array("png.1.jpg","png2.jpg","png3.jpg","png4.jpg","png5.jpg","png6.jpg","png7.jpg","png8.jpg","png9.jpg","png10.jpg","png11.jpg","png12.jpg")
+            myframe.src=photo[a]
+            a++;
+            if(a>=12){
+                a=0;
+            }
+        }
+
+        window.setInterval("img()",1200)
+    </script>
+</body>
+
+</html>

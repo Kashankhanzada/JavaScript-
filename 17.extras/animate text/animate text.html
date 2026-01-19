@@ -1,0 +1,36 @@
+<body>
+<head>
+<script language="javascript">
+var index=0
+var size=8
+var flag=true
+function animate()
+{
+color=new Array("Red","Blue","Green", "Yellow")
+abc.style.background="gray"
+abc.style.color=color[index]
+index++
+if(index>=4)
+{
+index=0
+}
+if(size<=72 && flag)
+{
+abc.style.fontSize=size
+size++
+if(size>72)
+flag=false
+}
+else if (size>=8 && !flag)
+{
+abc.style.fontSize=size
+size--
+if(size<8)
+flag=true
+  }
+}
+setInterval("animate()",50)
+</script>
+</head>
+<body>
+<p id="abc" align="center"> Welcome  </p> </body> </html>

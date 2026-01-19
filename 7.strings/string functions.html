@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = "this is string";
+        console.log(str)
+
+        // .indexOf => first occurence of string
+        var position = str.indexOf('is');
+        console.log(position);
+        
+        // .lastindexOf => last occurence of string
+        position = str.lastIndexOf('is');
+        console.log(position);
+        
+        //substring from a string
+        var substr = str.slice(4,7);
+        console.log(substr);
+
+        //for replace a word in string
+        var replace = str.replace('string','kashan');
+        console.log(str);
+        console.log(replace);
+
+        //for change case
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //concatenate
+        var newstr = str.concat("new one");
+        console.log(newstr);
+
+        //spaces
+        var h = "      this    is alot     space";
+        console.log(h);
+        console.log(h.trim());
+
+        //show string A/C to index no.
+        var l = str.charAt(2);
+        console.log(l);
+
+        var abc = "kashan";
+        abc[2];
+        console.log(abc);
+
+        // to find character code
+        var charactercode = abc.charCodeAt(2);
+        console.log(charactercode);
+
+        //used to split string
+        var split = abc.split(",");
+        console.log(split);
+
+    </script>
+</body>
+</html>

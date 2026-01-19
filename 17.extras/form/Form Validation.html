@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Form Validation</title>
+  <script language="javascript">
+  function nameValid()
+  {
+  if (f.txtName.value=="")
+  {
+  alert("Name is left blank")
+  f.txtName.focus()
+  }
+  }
+  
+  function passwordValid()
+  {
+  if (f.txtPassword.value=="")
+  {
+  alert("Password is left blank")
+  f.txtPassword.focus()
+  }
+  }
+  </script>
+</head>
+<body>
+<h3>Form Validation</h3>
+<form name="f">
+<pre>
+Name	:	<input type="text" name="txtName" onblur="nameValid()">
+Password:	<input type= "password" name="txtPassword" onblur="passwordValid()">
+<input type="button" value="Submit"> <input type="Reset" value="Clear">
+</pre> </form> </body> </html

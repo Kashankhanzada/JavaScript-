@@ -1,0 +1,43 @@
+<html>
+ <head>
+<title>Text Grow Effect</title>
+<style type= “text/css”>
+#abc
+{
+font-family:"Arial";font-size:10;
+color:red;
+}
+</style>
+<script language="javascript">
+var size=10;
+var flag=true;
+
+function grow()
+{
+if (size<=100 &&flag)
+	{
+	abc.style.fontSize=size;
+	size+=4;   //size=size+4
+
+	if(size>=100)
+	flag=false;
+	}
+else if(size>=10 &&  !flag)
+	{
+	abc.style.fontSize=size;
+	size -= 4; //size=size-4
+	if(size<=10)
+	flag=true;
+	}
+}
+setInterval("grow()",50)
+</script> </head>
+<body>
+    <script>
+        document.bgColor="green";
+                document.fgColor="pink";
+    </script>
+<h1 id="abc">National</h1>
+</body> 
+</html>
+

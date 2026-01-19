@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kashan{
+            color: red;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container kashan">
+        <div class="box" style="color: blue;" data-createdby="kashan" >hey i am a box</div>
+        <div class="box">hey i am a box</div>
+    </div>
+
+    <script>
+        // let div = document.createElement("div");
+        // div.innerHTML = "i have been inserted <b>by kashan</b>"
+        // div.setAttribute("class","created");
+        // document.querySelector(".container").append(div);
+        
+
+        //node.append(c)=>append/insert at the end of node
+        //node.prepend(c)=>insert at the beginning of node
+        //node.before(c)=>insert before node
+        //node.after(c)=>insert after node
+        //node.replacewith(c)=>replace with given node 
+
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("afterend","hello")
+
+        //"beforebegin"=> insert immedietly before element
+        //"afterbegin"=> insert html into element at beginning
+        //"beforeend"=> insert html into element at end
+        //"afterend"=>  insert immedietly after element
+    </script>
+</body>
+</html>
+<!-- document.querySelector(".box")
+<div class=​"box">​ hey i am a box ​</div>​
+
+document.querySelector(".box").innerHTML
+'\n            hey i am a box\n        '
+
+document.querySelector(".container").InnerHTML
+undefined
+
+document.querySelector(".container").innerHTML
+'\n        <div class="box">\n            hey i am a box\n        </div>\n    '
+
+document.querySelector(".container").outerHTML
+'<div class="container">\n        <div class="box">\n            hey i am a box\n        </div>\n    </div>' 
+
+document.querySelector(".container").tagName
+'DIV'
+
+document.querySelector(".container").nodeName
+'DIV'
+
+document.querySelector(".container").textContent
+'\n        \n            hey i am a box\n        \n 
+
+
+document.querySelector(".container").hidden
+false
+
+*****************************************to hide elements from html****************************************
+
+document.querySelector(".container").hidden = true
+true
+************************************************************************************************************
+
+document.querySelector(".box").innerHTML="hello world"
+'hello world'
+
+document.querySelector(".box").hasAttribute("style")
+false
+
+document.querySelector(".box").getAttribute("style")
+'color: blue;'
+
+document.querySelector(".box").setAttribute("style","color:red")
+undefined
+
+document.querySelector(".box").attributes
+NamedNodeMap {0: class, 1: style, class: class, style: style, length: 2}
+
+document.querySelector(".box").removeAttribute("style")
+undefined
+
+***************************************** edit  mode  of  web ****************************************
+
+document.designMode="on"
+'on'
+************************************************************************************************************
+
+document.querySelector(".box").dataset
+DOMStringMap {createdby: 'kashan'}
+
+document.querySelector(".container").classList
+DOMTokenList ['container', value: 'container']
+
+document.querySelector(".container").className
+'container'
+
+document.querySelector(".container").classList.add("kashan")
+undefined
+
+document.querySelector(".container").classList.remove("kashan")
+undefined
+
+for toggle inserting or removing classes.......
+document.querySelector(".container").classList.toggle("kashan")
+false
+document.querySelector(".container").classList.toggle("kashan")
+true
+
+document.querySelector(".container").textcontent;(enter)
+-->

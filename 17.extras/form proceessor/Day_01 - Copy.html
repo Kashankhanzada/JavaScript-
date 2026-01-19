@@ -1,0 +1,25 @@
+<html>
+ <head>
+    <title>Form Processing</title>
+ <script language="javascript">
+ function Form_Process()
+ {
+ alert ("User Name:"+ f.T[0].value + "\n\n" +
+"Password	:" +f.T[1].value)
+ }
+ </script>
+ </head>
+ <body>
+<h3>Form Processing </h3>
+ <form name="f">
+<pre>
+ User Name	:	<input type="text" name="T">
+ 
+Password		:	<input type="password" name="T">
+
+ <input type="button" value="Submit" onclick="Form_Process()">
+ <input type="reset" value="Clear">
+ </pre>
+ </form>
+ </body>
+</html>

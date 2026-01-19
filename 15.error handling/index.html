@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            // let a = prompt("enter first number");
+            // let b = prompt("enter second number");
+            // let sum = parseInt(a)+  parseInt(b);
+            // console.log(sum);
+
+
+            
+            // let a = prompt("enter first number");
+            // let b = prompt("enter second number");
+            // let sum = parseInt(a)+  parseInt(b);
+            // if (isNaN(a) || isNaN(b)){
+            //     throw SyntaxError("sorry this is not allowed")
+                
+            // };
+            // console.log(sum);
+
+
+            let a = prompt("enter first number");
+            let b = prompt("enter second number");
+            let sum = parseInt(a)+  parseInt(b);
+            if (isNaN(a) || isNaN(b)){
+                throw SyntaxError("sorry this is not allowed")
+                
+            };
+            function main(){
+                let x = 5
+                try {
+                    console.log(sum*x);
+                } catch (error) {
+                    console.log("error kar diya bhai ")                
+                }
+                finally{
+                    console.log("files are closed")
+                }
+            }
+            let c= main()
+                
+                </script>
+                </body>
+                </html>
